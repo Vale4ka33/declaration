@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background: #fff;
   }
   
   h1, h2, h3, h4, h5, h6 {
@@ -68,67 +69,65 @@
   }
 
  
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.main-container {
+  width: 794px;
+  height: 1123px;
+  margin: 0 auto;
+  padding: 10px;
 }
 
 .header {
     text-align: center;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
-table {
-    width: 100%;
-    margin-bottom: 20px;
+.heder-name{
+font-size: 18px;
+font-weight: 700;
+}
+.body-container{
+  border: 1px solid #000;
+  width: 775px;
+  height: 1123px;
+  padding: 10px;
 }
 
-th, td {
-    border: 1px solid #000;
-    padding: 8px;
-    text-align: center;
+.top-left-container{
+height: 400px;
 }
 
-th {
-    font-weight: bold;
+.vertical-text {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  border: 1px solid black;
+  align-items: center;
 }
 
-.section-title {
-    text-align: center;
+.heder-top{
+  display: flex;
 }
 
-.footer {
-    text-align: center;
-    font-weight: bold;
-    margin-top: 20px;
-    border-top: 1px solid #000;
-    padding-top: 10px;
+.heder-center{
+  display: flex;
 }
 
-.verticale{
-    writing-mode: vertical-lr; /* Повертає текст вертикально */
-    transform: rotate(180deg); /* Робить текст читабельним зверху вниз */
-    height: 250px; /* Збільшує висоту комірок */
-    white-space: nowrap;
-    font-size: 10px;
+.num-1{
+  border: 1px solid black;
+  padding: 15px;
+  width: 50px;
 }
 
-.table__cell {
-    height: auto;
-    text-align: left;
-    font-size: 10px;
-  }
-
-.tableheader{
-    font-size: 10px;
+.num-6{
+  border: 1px solid black;
+  padding: 15px 40px;
+  width: 90px;
 }
 
-.num-sumbol{
-    margin-left: 20px;
+.heder-1{
+  width: 50px;
 }
 
+.heder-2{
+  width: 90px;
+}
