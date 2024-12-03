@@ -55,6 +55,10 @@
   textarea {
     resize: none;
   }
+
+  input{
+    outline: none;
+  }
   
   /* Стилі для документу */
 
@@ -70,18 +74,19 @@
 
   .input-field {
     width: 100%;
+    line-height: 14px;
     /* height: 100%; */
-    padding: 5px;
     border: 1px solid grey;
     outline: none;
     font-size: 10px;
+    text-align: center;
 }
 
 textarea.input-field {
   width: 100%;
   max-height: 100%;
   height: 100%;
-  padding: 2px;
+  line-height: 1.2em;
   border: 1px solid grey;
   box-sizing: border-box;
   text-align: left;
@@ -113,15 +118,14 @@ textarea.input-field {
   flex-grow: 1; /* Інпут займає всю доступну ширину, якщо є місце */
   margin-left: 5px;
   margin-right: 15px;
-  width: 150px;
+  width: 130px;
+  padding-left: 2px;
 }
 
 .top-center-1, .top-center-2, .top-center-3, 
 .top-center-4, .top-center-5, .top-center-6, .top-center-7 {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: stretch;
   height: 100%;
 }
 .top-center-4,
@@ -130,14 +134,10 @@ textarea.input-field {
   flex-direction: row;
   border: 1px solid black;
   border-bottom: none;
-  /* height: 30px; */
 }
 .top-center-4{
-  justify-content: space-between;
-  align-items: center;
+  justify-content: flex-start;
 }
-
-
 
 .main-container {
   width: 794px;
@@ -195,7 +195,7 @@ padding-top: 3px;
 }
 
 .vertical-text {
-  width: 30px;
+  width: 31px;
   height: 280px;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
@@ -220,8 +220,8 @@ padding-top: 3px;
 .num-1,
 .num-6{
   border: 1px solid black;
-  width: 30px;
-  height: 30px;
+  width: 31px;
+  height: 31px;
   font-size: 9px;
   font-weight: 500;
   display: flex;
@@ -244,7 +244,7 @@ padding-top: 3px;
   border-bottom: none;
 }
 .top-center-1{
-height: 79px;
+height: 85px;
 }
 
 .top-center-2{
@@ -258,28 +258,124 @@ height: 79px;
 }
 
 .top-center-5{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
   /* height: 30px; */
 }
 
-.top-center-6{
-  height: 40px;
-}
 .top-center-7{
   border-bottom: 1px solid black;
 }
 
+.wrapper-29,
+.wrapper-30{
+  width: 50%;
+  padding: 2px;
+}
+
+
 .wrapper-18{
 display: flex;
+justify-content: space-between;
+width: 100%;
+height: 15px;
+padding-bottom: 2px;
+padding-left: 2px;
 }
 
-.wrapper-19{
+.wrapper-18-2{
+  margin-left: 25px;
+  display: flex;
+  align-items: end;
+}
+
+.wrapper-19,
+.wrapper-21-1{
   border-left: 1px solid black;
-  width: 35px;
 }
 
-.wrapper-19 .input {
+.wrapper-21-1{
+  width: 30px;
+}
+
+.wrapper-input-21{
+height: 15px;
+}
+
+.input-field-1,
+.input-field-2 {
+  text-align:center ;
+  border: none;
+  font-size: 10px;
+  width: 30px;
+  
+}
+
+.input-with-left-border {
+  display: flex;
+  justify-content: flex-end;
+  border-left: 1px solid black;
+  width: 30px;
+  line-height: 14px;
+}
+
+.wrapper-26,
+.wrapper-25 {
+  width: 75px;
+  border-right: 1px solid black;
+
+}
+
+.wrapper-27{
+  width: 180px;
+}
+
+.wrapper-25-1{
+  display: flex;
+  width: 70px;
+}
+
+.wrapper-26-1,
+.wrapper-11-1{
+  display: flex;
+  flex-direction: row;
+}
+
+.text-6{
+  font-size: 7px;
+  line-height: 1;
+  word-break: break-word;
+  text-align: end;
+}
+.input-18{
+  height: 15px;
+}
+
+.input-25,
+.input-13,
+.input-10,
+.input-10-1,
+.input-11,
+.input-11-1{
   border: none;
 }
+
+
+.input-25:nth-child(1) {
+  width: 30px;
+  border-right: 1px solid black;
+}
+
+.wrapper-27-1{
+padding: 1px;
+}
+
+.input-27{
+  margin-left: 7px;
+}
+
 
 .top-center-text,
 .second-text{
@@ -287,12 +383,16 @@ font-size: 7px;
 padding: 1px;
 }
 
+.text-27{
+  padding-left: 2px;
+}
+
 
 .border-decl{
   border-left: 1px solid black;
   border-top: 1px solid black;
-  height: 17px;
-  margin-left: -1px;
+  height: 10px;
+  margin-left: -0.5px;
   width: 101px;
 
 }
@@ -304,6 +404,7 @@ padding: 1px;
 
 .top-right-2{
   border-left: 1px solid black;
+  margin-left: -1px;
 }
 
 .top-right-1-2,
@@ -312,7 +413,7 @@ padding: 1px;
   flex-direction: row;
   font-size: 7px;
   border: 1px solid black;
-  height: 30px;
+  height: 27px;
   border-left: none;
 
 }
@@ -325,6 +426,55 @@ padding: 1px;
 }
 .top-right-1-2{
   border-right: none;
+}
+
+.wrapper-tr-3{
+  display: flex;
+  flex-direction: row;
+}
+.input-tr-3{
+  width: 24px;
+  border: none;
+  border-right: 1px solid black;
+}
+
+.input-tr-3:not(:first-child) {
+  border-right: none;
+}
+
+.container-tr-3,
+.wrapper-tr-4{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 1px solid black;
+  padding-left: 2px;
+}
+.wrapper-tr-4{
+  border: none;
+}
+
+.wrapper-tr-5,
+.wrapper-tr-6,
+.wrapper-tr-7 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 2px;
+  padding-left: 2px;
+}
+
+.wrapper-tr-5{
+  border-right: 1px solid black;
+}
+
+.wrapper-tr-6{
+  width: 70px;
+  border-right: 1px solid black;
+}
+
+.wrapper-tr-7{
+  width: 180px;
 }
 
 .top-right-decl,
@@ -348,35 +498,113 @@ padding: 1px;
   display: flex;
   flex-direction: row;
   height: 20px;
+  padding-left: 1.5px;
 }
 
 .border-1{
-width:33px;
 border-right: 1px solid black;
 }
 
 .border-2{
-width:19px;
 border-right: 1px solid black;
+}
+
+.border-3{
+padding-left: 2px;
 }
 
 .top-right-1-1-1{
   display: flex;
   flex-direction: column;
-  height: 35px;
+  height: 30px;
 }
 
 .top-right-form,
 .top-right-1-2-1{
-  width: 52px;
-  border-right: 1px solid black;
-}
-
-.top-right-1-2-2{
-  width: 60px;
-  border-right: 1px solid black;
+  width: 50px;
 }
 
 .top-right-second{
   height: 80px;
+}
+
+.text-29,
+.text-30{
+padding: 0;
+}
+
+.input-decl-1{
+  width: 30px;
+  border: none;
+}
+.input-decl-2{
+  width: 20px;
+  border: none;
+
+}
+.input-decl-3{
+  width: 40px;
+  border: none;
+}
+
+.top-right-9{
+  border-bottom: 1px solid black;
+  padding-left: 2px;
+  padding-bottom: 2px;
+  height: 55px;
+}
+
+.input-9{
+  margin-right: 0;
+}
+
+textarea.textarea-9{
+  height: 38px;
+}
+
+.top-right-3,
+.top-right-4{
+  display: flex;
+  border-bottom: 1px solid black;
+}
+
+.text-10,
+.text-11{
+  text-align: start;
+}
+.wrapper-10,
+.wrapper-11{
+  width: 61px;
+  border-right: 1px solid black;
+}
+
+.container-10{
+  display: flex;
+}
+
+.wrapper-13{
+  width: 30px;
+  margin-left: auto;
+  border-left: 1px solid black;
+}
+
+.input-12{
+  width: 130px;
+}
+
+.wrapper-12-1{
+  margin-left: 20px;
+}
+.input-11-1,
+.input-10-1{
+  border-right: 1px solid black;
+}
+
+.wrapper-15{
+  width: 111px;
+  border-right: 1px solid black;
+
+}
+.wrapper-15-1{
+  padding: 2px;
 }

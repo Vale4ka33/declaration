@@ -51,21 +51,21 @@
               <div class="top-center-1">
                 <div class="container-number">
                   <p class="top-center-text">2. Відправник/Експортер</p>
-                  <p class="num-sumb">№<input type="text" class="input-num"></p>
+                  <p class="num-sumb">№<input type="text" maxlength="20" class="input-num"></p>
                 </div>
                 <textarea class="input-field" maxlength="170"></textarea>
               </div>
               <div class="top-center-2">
                 <div class="container-number">
                 <p class="top-center-text">8. Одержувач</p>
-                <p class="num-sumb">№<input type="text" class="input-num"></p>
+                <p class="num-sumb">№<input type="text" maxlength="20" class="input-num"></p>
               </div>
                 <textarea class="input-field" maxlength="170"></textarea>
               </div>
               <div class="top-center-3">
                 <div class="container-number">
                 <p class="top-center-text">14. Декларант/Представник</p>
-                <p class="num-sumb">№<input type="text" class="input-num"></p>
+                <p class="num-sumb">№<input type="text" maxlength="20" class="input-num"></p>
                 </div>
                 <textarea class="input-field" maxlength="120"></textarea>
               </div>
@@ -75,40 +75,55 @@
                     <p class="top-center-text">18. Ідентифікація і країна реєстрації трансп. засобу при відправленні/прибутті</p>
                   </div>
                   <div class="wrapper-18">
-                    <input type="text" class="input-field">
-                    <input type="text" class="input-field">
+                    <input type="text" maxlength="35" class="input-field input-18">
                   </div>
+                </div>
+                <div class="wrapper-18-2">
+                  <input type="text" maxlength="4" class="input-field-1 input-with-left-border">
                 </div>
                 <div class="wrapper-19">
                   <p class="top-center-text">19. Конт.</p>
-                  <input type="text" class="input-field">
+                  <input type="text" maxlength="4" class="input-field-1">
                 </div>
               </div>
               <div class="top-center-5">
-                <p class="top-center-text">21. Ідентифікація і країна реєстрації активного транспортного засобу на кордоні</p>
-                <input type="text" class="input-field">
+                <div class="wrapper-21">
+                  <p class="top-center-text">21. Ідентифікація і країна реєстрації активного транспортного засобу на кордоні</p>
+                  <input type="text"  maxlength="35" class="input-field wrapper-input-21">
+                </div>
+                <div class="wrapper-21-1">
+                  <input type="text"  maxlength="4" class="input-field-2">
+                </div>
               </div>
               <div class="top-center-6">
-                <div>
-                  <p class="top-center-text">25. Вид транспорту </p>
-                  <input type="text" class="input-field">
+                <div class="wrapper-25">
+                  <p class="top-center-text text-6">25. Вид транспорту на кордоні</p>
+                  <div class="wrapper-25-1">
+                    <input type="text"  maxlength="4" class="input-field input-25">
+                    <input type="text" maxlength="10" class="input-field input-25">
+                  </div>
                 </div>
-                <div>
-                  <p class="top-center-text">26. Вид транспорту в</p>
-                  <input type="text" class="input-field">
+                <div class="wrapper-26">
+                  <p class="top-center-text text-6">26. Вид транспорту в межах країни</p>
+                  <div class="wrapper-26-1">
+                    <input type="text"  maxlength="4" class="input-field input-25">
+                    <input type="text" maxlength="10" class="input-field input-25">
+                  </div>
                 </div>
-                <div>
-                  <p class="top-center-text">27. Місце навантаження/розвантаження</p>
-                  <input type="text" class="input-field">
+                <div class="wrapper-27">
+                  <p class="top-center-text text-27">27. Місце навантаження/розвантаження</p>
+                  <div class="wrapper-27-1">
+                    <input type="text" maxlength="30" class="input-field input-27">
+                  </div>
                 </div>
               </div>
               <div class="top-center-7">
-                <div>
-                  <p class="top-center-text">29. Митний орган виїзду/в'їзду</p>
+                <div class="wrapper-29">
+                  <p class="top-center-text text-29">29. Митний орган виїзду/в'їзду</p>
                   <input type="text" class="input-field">
                 </div>
-                <div>
-                  <p class="top-center-text">30. Місцезнаходження товарів</p>
+                <div class="wrapper-30">
+                  <p class="top-center-text text-30">30. Місцезнаходження товарів</p>
                   <input type="text" class="input-field">
                 </div>
               </div>
@@ -123,14 +138,23 @@
                       <p class="top-right-decl">1. Декларація</p>
                     </div>
                     <div class="border-wrap">
-                      <div class="border-1"></div>
-                      <div class="border-2"></div>
-                      <div class="border-3"></div>
+                      <div class="border-1"><input type="text"  maxlength="4" class="input-field input-decl-1"></div>
+                      <div class="border-2"><input type="text"  maxlength="4" class="input-field input-decl-2"></div>
+                      <div class="border-3"><input type="text"  maxlength="4" class="input-field input-decl-3"></div>
                     </div>
                   </div>
                   <div class="top-right-1-1-2">
-                    <p class="top-right-form">3. Форми</p>
-                    <p>4. Відв. спец.</p>
+                    <div class="container-tr-3">
+                      <p class="top-right-form">3. Форми</p>
+                      <div class="wrapper-tr-3">
+                        <input type="text"  maxlength="3" class="input-field input-tr-3">
+                        <input type="text"  maxlength="3" class="input-field input-tr-3">
+                      </div>
+                    </div>
+                    <div class="wrapper-tr-4">
+                      <p>4. Відв. спец.</p>
+                      <input type="text"  maxlength="4" class="input-field input-decl-3">
+                    </div>
                   </div>
                 </div>
                 <div class="top-right-2">
@@ -138,20 +162,80 @@
                 </div>
               </div>
               <div class="top-right-1-2">
-                <p class="top-right-1-2-1">5. Всього т-ів</p>
-                <p class="top-right-1-2-2">6. Всього місць</p>
-                <p class="top-right-1-2-3">7. Довідковий номер</p>
+                <div class="wrapper-tr-5">
+                  <p class="top-right-1-2-1">5. Всього т-ів</p>
+                  <input type="text"  maxlength="6" class="input-field input-decl-3">
+                </div>
+                <div class="wrapper-tr-6">
+                  <p class="top-right-1-2-2">6. Всього місць</p>
+                  <input type="text"  maxlength="6" class="input-field input-decl-3">
+                </div>
+                <div class="wrapper-tr-7">
+                  <p class="top-right-1-2-3">7. Довідковий номер</p>
+                  <input type="text"  maxlength="25" class="input-field input-tr-7">
+                </div>
               </div>
             </div>
             <div class="top-right-second">
-              <div>
-                <p class="second-text">9. Особа, відповідальна за фінансове врегулювання<span>№</span></p>
+              <div class="top-right-9">
+                <div class="container-number">
+                  <p class="second-text">9. Особа, відповідальна за фінансове врегулювання</p>
+                  <p class="num-sumb">№<input type="text" maxlength="20" class="input-num input-9"></p>
+                </div>
+                <div>
+                  <textarea class="input-field textarea-9" maxlength="150"></textarea>
+                </div>
               </div>
-              <div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+              <div class="top-right-3">
+                <div class="wrapper-10">
+                  <p class="top-center-text text-10"> 10. Країна перш./Країна постач.</p>
+                  <div class="container-10">
+                    <input type="text"  maxlength="3" class="input-field input-10-1">
+                    <input type="text" maxlength="3" class="input-field input-10">
+                  </div>
+                </div>
+                <div class="wrapper-11">
+                  <p class="top-center-text text-11"> 11. Торг. країна/Країна виробн.</p>
+                  <div class="wrapper-11-1">
+                    <input type="text"  maxlength="3" class="input-field input-11-1">
+                    <input type="text" maxlength="3" class="input-field input-11">
+                  </div>
+                </div>
+                <div class="wrapper-12">
+                  <p class="top-center-text">12. Відомості про вартість</p>
+                  <div class="wrapper-12-1">
+                    <input type="text" maxlength="30" class="input-field input-12">
+                  </div>
+                </div>
+                <div class="wrapper-13">
+                  <p class="top-center-text">13. ЄСП</p>
+                  <div>
+                    <input type="text" maxlength="4" class="input-field input-13">
+                  </div>
+                </div>
+              </div>
+              <div class="top-right-4">
+                <div class="wrapper-15">
+                  <p class="top-center-text">15 Країна відправлення/експорту</p>
+                  <div class="wrapper-15-1">
+                    <input type="text" maxlength="30" class="input-field">
+                  </div>
+                </div>
+                <div class="wrapper-16">
+                  <p class="top-center-text text-6">25. Вид транспорту на кордоні</p>
+                  <div class="wrapper-25-1">
+                    <input type="text"  maxlength="4" class="input-field input-25">
+                    <input type="text" maxlength="10" class="input-field input-25">
+                  </div>
+                </div>
+                <div class="wrapper-26">
+                  <p class="top-center-text text-6">26. Вид транспорту в межах країни</p>
+                  <div class="wrapper-26-1">
+                    <input type="text"  maxlength="4" class="input-field input-25">
+                    <input type="text" maxlength="10" class="input-field input-25">
+                  </div>
+                </div>
+            
               </div>
             </div>
             </div>
